@@ -1,0 +1,33 @@
+<!-- Header Component - Componente de encabezado con navbar -->
+<header class="header">
+    <!-- Sección del título y subtítulo (centrados) -->
+    <div class="header-intro">
+        <div class="container">
+            <h1>🚀 Mi Sitio Web</h1>
+            <p class="subtitle">Creado con Django y Docker</p>
+        </div>
+    </div>
+    
+    <!-- Sección de Navegación -->
+    <div class="header-navbar">
+        <div class="container navbar-container">
+            <!-- Menú Hamburguesa (solo visible en móvil) -->
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Menú de Navegación -->
+            <nav class="navbar" id="navbar">
+                <ul class="nav-menu">
+                    <li><a href="{% url 'home' %}" class="nav-link">HOME</a></li>
+                    <li><a href="{% url 'plantilla1' %}" class="nav-link">PLANTILLA 1</a></li>
+                    <li><a href="{% url 'plantilla2' %}" class="nav-link">PLANTILLA 2</a></li>
+                    <li><a href="{% url 'plantilla3' %}" class="nav-link">PLANTILLA 3</a></li>
+                    <li><a href="{% url 'plantilla4' %}" class="nav-link">PLANTILLA 4</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
